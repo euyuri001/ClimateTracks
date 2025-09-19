@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CLIMATE TRACKS</title>
+  <style>
+      header {
+      text-align: center;
+      margin-bottom: 125px;
+      margin-top: 5px;
+    }
+    body {
+      background-image: url('background.gif');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    p {
+      color: white;
+      margin-top: 15px;
+      font-size: 30px;
+    }
+    .icon {
+      width: 110px;
+      cursor: pointer;
+      margin: 10px;
+      transition: transform 0.2s;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+    .icon:hover { transform: scale(1.1); }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .modal-content {
+      background: #000;
+      margin: 5% auto;
+      padding: 10px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 800px;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+    }
+    footer{
+        text-align:center;
+        padding:10px;
+        color:#FE058D;
+        font-size:20px;
+        margin-top: 990px;
+        font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="climate.png" alt="Logo TRACKS" width="450px">
+</header>
+
+<!-- Ícones -->
+<img src="sunrise.png" id="openBtn1" class="icon">
+<img src="pixelsunicon.png" id="openBtn2" class="icon">
+<img src="umbrella.png" id="openBtn3" class="icon">
+<img src="flower.png" id="openBtn4" class="icon">
+
+<!-- Modal 1 -->
+<div class="modal" id="myModal1">
+  <div class="modal-content">
+    <span class="close" id="closeBtn1">&times;</span>
+    <div class="video-container">
+      <iframe id="youtubeVideo1" src="https://www.youtube.com/embed/KQetemT1sWc"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <p>A música "Here Comes The Sun", dos Beatles, traz uma mensagem clara de otimismo e renovação. George Harrison compôs a canção em um momento de tensão dentro da banda, buscando alívio e inspiração na casa de Eric Clapton. O surgimento do sol, que motivou Harrison a escrever, simboliza o fim de um período difícil e o início de uma fase mais leve e esperançosa.</p>
+
+<p>A letra faz referência ao "longo inverno frio e solitário", uma metáfora para fases complicadas e prolongadas, tanto pessoais quanto coletivas. Quando Harrison canta “the smiles returning to the faces” (os sorrisos voltando aos rostos) e “I feel that ice is slowly melting” (sinto que o gelo está derretendo aos poucos), ele expressa de forma simples a sensação de superação e o retorno da alegria. O uso do sintetizador Moog, novidade trazida por Harrison, reforça a atmosfera acolhedora e inovadora da música. Assim, "Here Comes The Sun" se tornou um símbolo universal de esperança, mostrando que, mesmo após tempos difíceis, a luz e a leveza podem voltar a fazer parte da vida.</p>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal" id="myModal2">
+  <div class="modal-content">
+    <span class="close" id="closeBtn2">&times;</span>
+    <div class="video-container">
+      <iframe id="youtubeVideo2" src="https://www.youtube.com/embed/35Jlpwsz2Jg"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <p>“VOCÊ ERA MEU SUNSHINE (part. Paczin e Wescritor)”, de Xamã, destaca-se por unir referências de luxo, cotidiano urbano e memórias afetivas. O título e o refrão remetem a alguém que foi fonte de alegria e energia para o narrador, mas que agora faz parte do passado. A despedida aparece de forma direta e realista, como nos versos “tenho que ir embora, meu amor / Não posso perder o time, o trânsito pra Sul engarrafou”, aproximando a canção da rotina das grandes cidades brasileiras.</p>
+
+<p>O álbum “Fragmentado” e a produção com guitarra e teclados criam um clima nostálgico, reforçando a reflexão sobre amores passageiros. A letra mistura metáforas e referências pop, como “Corola”, “Miami Vice”, “Pixar” e “DVD pirata do crepúsculo”, que dialogam tanto com o desejo de ascensão social quanto com uma ironia sobre os clichês do rap e da ostentação. Ao mencionar “Ailton Krenak” e “Espírito da guerrilha”, Xamã faz referência à resistência cultural e à ancestralidade indígena, sugerindo uma busca por identidade e força interior. O verso “A vida não é útil / Clímax é ápice” resume a ideia de viver intensamente, mesmo diante das desilusões e da fragmentação dos sentimentos.</p>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="myModal3">
+  <div class="modal-content">
+    <span class="close" id="closeBtn3">&times;</span>
+    <div class="video-container">
+      <iframe id="youtubeVideo3" src="https://www.youtube.com/embed/7flrKMGfwjw"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <p>A música "Can You Stand The Rain", do New Edition, vai além de uma simples declaração de amor romântico. A letra utiliza a metáfora da chuva e das tempestades para falar sobre maturidade emocional e compromisso em um relacionamento. O questionamento central, "Can you stand the rain?" (Você aguenta a chuva?), não é apenas sobre suportar momentos difíceis, mas sobre a disposição de enfrentar juntos as adversidades que inevitavelmente surgem na vida a dois. O contexto da composição reforça essa ideia, já que a canção foi criada para abordar a importância da resiliência e do compromisso mútuo.</p>
+<p>A letra também deixa claro que o compromisso é uma via de mão dupla. O trecho "I'm not asking just of you / And girl to make it last / I'll do whatever needs to be done" (Não estou pedindo só de você / E, garota, para fazer durar / Eu farei o que for preciso) mostra que o narrador está igualmente disposto a se esforçar para manter o relacionamento. O refrão reforça que as dificuldades são certas: "Storms will come, this we know for sure" (Tempestades virão, isso sabemos com certeza), e o que realmente importa é a vontade de permanecer ao lado do outro nesses momentos.</p>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal" id="myModal4">
+  <div class="modal-content">
+    <span class="close" id="closeBtn4">&times;</span>
+    <div class="video-container">
+      <iframe id="youtubeVideo4" src="https://www.youtube.com/embed/9f5zD7ZSNpQ"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <p>"After The Storm", de Kali Uchis, traz uma mensagem clara sobre autossuficiência e resiliência diante das dificuldades. A música destaca que, mesmo quando buscamos apoio externo, a verdadeira força está dentro de cada um. O refrão “So if you need a hero / Just look in the mirror” (“Então, se você precisa de um herói / Apenas olhe no espelho”) reforça essa ideia. Kali Uchis já comentou que as tempestades da vida são passageiras e necessárias para o crescimento, comparando-as ao processo de florescer após a chuva.</p>
+<p>A letra utiliza imagens da natureza, como tempestades e flores, para ilustrar o ciclo de superação e renovação. O trecho “'Cause after the storm's / When the flowers bloom” (“Porque depois da tempestade / É quando as flores florescem”) conecta diretamente com a ideia de que, após períodos de sofrimento, surgem novas oportunidades. Tyler, The Creator contribui com versos bem-humorados e referências ao sol e às flores, reforçando o tom otimista. Expressões como “Nothing good ever comes easy” (“Nada bom vem fácil”) e “winners don't quit” (“vencedores não desistem”) transmitem uma mensagem de perseverança. Bootsy Collins complementa com reflexões sobre carma e resiliência, alinhando-se ao tema central de autoconfiança e esperança.</p>
+  </div>
+</div>
+
+<script>
+  // Array com os 4 modais
+  const videos = [
+    {btn: "openBtn1", modal: "myModal1", close: "closeBtn1", iframe: "youtubeVideo1", url: "https://www.youtube.com/embed/KQetemT1sWc"},
+    {btn: "openBtn2", modal: "myModal2", close: "closeBtn2", iframe: "youtubeVideo2", url: "https://www.youtube.com/embed/35Jlpwsz2Jg"},
+    {btn: "openBtn3", modal: "myModal3", close: "closeBtn3", iframe: "youtubeVideo3", url: "https://www.youtube.com/embed/7flrKMGfwjw"},
+    {btn: "openBtn4", modal: "myModal4", close: "closeBtn4", iframe: "youtubeVideo4", url: "https://www.youtube.com/embed/9f5zD7ZSNpQ"}
+  ];
+
+  videos.forEach(v => {
+    const openBtn = document.getElementById(v.btn);
+    const modal = document.getElementById(v.modal);
+    const closeBtn = document.getElementById(v.close);
+    const iframe = document.getElementById(v.iframe);
+
+    if (openBtn && modal && closeBtn && iframe) { // garante que todos existem
+      openBtn.onclick = () => { modal.style.display = "block"; }; // abre modal
+      closeBtn.onclick = () => { modal.style.display = "none"; iframe.src = v.url; }; // fecha modal e reseta vídeo
+      window.addEventListener("click", (e) => { if (e.target === modal) { modal.style.display = "none"; iframe.src = v.url; } });
+    }
+  });
+</script>
+<footer>
+  &copy; 2025 Yuri Lima. All rights reserved.
+</footer>
+</body>
+</html>
